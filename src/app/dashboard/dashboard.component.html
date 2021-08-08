@@ -1,10 +1,13 @@
 <div class="cards" *ngIf="chargingPoints">
     <div class="card" *ngFor="let chargingPoint of chargingPoints">
-      <h5>Charging Point <strong>{{ chargingPoint.id }}</strong></h5>
-      <p style="margin-top: 8px;">Connected Time: <br> {{ chargingPoint.connectedTime | msToHours }}</p>
-      <p>Power: {{ chargingPoint.power }} W</p>
-      <p>{{ chargingPoint.occupied ? 'Occupied' : 'Available'}}</p>
-      <button type="button" class="btn btn-light btn-sm" *ngIf="chargingPoint.occupied" (click)="unplugChargingPoint(chargingPoint)"><strong>Unplug</strong></button>
-      <button type="button" class="btn btn-light btn-sm" *ngIf="!chargingPoint.occupied" (click)="plugChargingPoint(chargingPoint)"><strong>Plug</strong></button>
+        <h5 style="color: #f6a800;">Charging Point <strong><span style="font-size: 25px;">
+            {{ chargingPoint.id }}</span></strong></h5>
+        <p style="margin-top: 8px;">Connected Time: <br> {{ chargingPoint.connectedTime | msToHours }}</p>
+        <p>Power: {{ chargingPoint.power }} W</p>
+        <p>{{ chargingPoint.occupied ? 'Occupied' : 'Available'}}</p>
+        <button type="button" class="btn btn-light btn-sm" *ngIf="chargingPoint.occupied"
+            (click)="unplugChargingPoint(chargingPoint)"><strong>Unplug</strong></button>
+        <button type="button" class="btn btn-light btn-sm" *ngIf="!chargingPoint.occupied"
+            (click)="plugChargingPoint(chargingPoint)"><strong>Plug</strong></button>
     </div>
-  </div>
+</div>

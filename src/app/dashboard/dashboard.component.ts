@@ -41,9 +41,7 @@ export class DashboardComponent implements OnInit {
           this.getChargingPoints();
         });
       this.plugIn = undefined;
-      
     }
-    
   }
 
   unplugChargingPoint(chargingPoint: ChargingPoint) {
@@ -60,10 +58,7 @@ export class DashboardComponent implements OnInit {
           }
           this.getChargingPoints();
         });
-
       this.plugIn = undefined;
-      
     }
-    
   }
 }

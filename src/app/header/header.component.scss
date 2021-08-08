@@ -1,0 +1,30 @@
+*{transition:all 0.3s ease-in-out;}
+
+.container{
+  clear:both;
+  overflow:auto;
+  padding-right: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 0px;
+}
+
+nav{float: left;}
+
+img{
+    float:left;
+    max-height: 100%;
+    max-width: 30%;
+    height: auto;
+}
+
+ul li{
+  display: inline-block; padding:10px;
+  font-size:20px; 
+}
+
+ol, ul {
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    padding-right: 20px;
+}
